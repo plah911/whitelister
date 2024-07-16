@@ -12,5 +12,5 @@ jobs:
     steps:
     - name: Send a HTTP request to Replit
       run: |
-        RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" "https://your-repl-url.repl.co")
+        RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" "https://28559376-1dfd-4847-b356-6845e993785e-00-9458k63cgqbo.sisko.replit.dev/")
         echo "HTTP Response: $RESPONSE"
