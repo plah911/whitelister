@@ -1,0 +1,16 @@
+name: Ping Replit
+
+on:
+  schedule:
+    # Runs every 30 minutes
+    - cron: '*/1 * * * *'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send a HTTP request to Replit
+      run: |
+        RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" "https://your-repl-url.repl.co")
+        echo "HTTP Response: $RESPONSE"
