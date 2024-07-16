@@ -1,0 +1,14 @@
+name: Ping Replit
+
+on:
+  schedule:
+    # Runs every 30 minutes
+    - cron: '*/30 * * * *'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send a HTTP request to Replit
+      run: curl -s "https://your-repl-url.repl.co"
