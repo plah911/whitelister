@@ -2,7 +2,7 @@ name: Ping Replit
 
 on:
   schedule:
-    # Runs every 1 minut
+    # Runs every 1 minute
     - cron: '*/10 * * * *'
 
 jobs:
