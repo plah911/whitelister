@@ -1,1 +1,1 @@
-true
+local whitelistEnabled = true
